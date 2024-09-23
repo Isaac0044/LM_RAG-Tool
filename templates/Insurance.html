@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>保險諮詢</title>
+</head>
+<style>
+/*初始網站*/
+    *,
+    *::after,
+    *::before{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    html,body{
+        scroll-behavior: smooth;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+    .container{
+        max-width: 800px;
+        height: 100%;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+        
+    }
+/*下方是主要CSS樣式*/
+
+.form-item{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ label{
+    flex: 0 0 150px;/*固定標籤*/
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.btn{
+    display: flex;
+    width: 500px;
+    margin: auto auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content{
+        
+        background-color: #f4f2f2;
+        max-width: 700px;
+        margin: 50px auto;
+        height: 900px;
+}
+
+input{margin-top: 50px;
+	  width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px
+
+}
+
+
+.form-h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.about{
+	text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+	
+.in_box {
+		/*	bottom	*/
+		margin-left: 10px;
+		background: rgb(127, 194, 207);
+		border: none;
+		color: white;
+		width: 200px;
+	}
+
+</style>
+
+
+ <body>
+
+    <div class="wrap">
+        <div class="content">
+            <form  method="post">
+                <h1 class="form-h1">請輸入保單資料</h1>
+                <div class="form-item">
+                    <label for="insurance_name">保險名稱：</label>
+                    <input type="text" id="insurance_name" name='in_name'  value="{{ in_name }}" required>
+                </div>
+
+                <DIV class="form-item">
+                    <label for="premium">保額：</label>
+                    <input type="number" id="premium" name='in_pre' value="{{ in_pre }}" min=0 required>
+                </DIV>
+
+                <div class="form-item">
+                    <label for="start_time">保險生效時間：</label>
+                    <input type='date' id='start_time'  name = 'in_stime' placeholder='2014-09-18' size = '50' class='in_about' value="{{ in_stime }}" required >
+                </div>
+				
+				 <div class="form-item">
+                    <label for="end_time">保險結束時間：</label>
+                    <input type='date' id='end_time'  name = 'in_etime' placeholder='2014-09-18' size = '50' class='in_about'  value="{{ in_etime }}" required>
+                </div>
+
+                <script>
+                    // 獲取今天的日期並格式化為 YYYY-MM-DD
+                    var today = new Date().toISOString().split('T')[0];
+                    // 設置 input 的最大日期
+                    document.getElementById('end_time').setAttribute('max', today);
+                    document.getElementById('start_time').setAttribute('min', today);
+                </script>
+				
+				<DIV class="form-item">
+                    <label for="insurance_year">保險金：</label>
+                    <input type="number" id="insurance_year" name='in_money' value="{{ in_money }}" min=0 required>
+                </DIV>
+				
+				<div class='about'>
+                    <!-- <input type="text" id="in_cmsg" name='in_cmsg' value="{{ in_cmsg }}" min=0 required> -->
+					<textarea type="input" name='in_cmsg' rows='8'cols='50' placeholder="請輸入保單內容" required></textarea>
+                    <script>
+                    var is_textarea = false;
+                    // when fieldname is info_body, change to textarea
+                    if(i === "info_body") {
+                        is_textarea = true;
+                    }
+                    return l && "file" === l ? D.a.createElement(d, {
+                        type: "file",
+                        className: o.length ? "invalid" : "",
+                        title: o.length ? o : "",
+                        onChange: this.onChange,
+                        disabled: h
+                    }) :( !is_textarea ? D.a.createElement(kr.a, {
+                        type: c && "password" === c ? "password" : "text",
+                        className: o.length ? "invalid" : "",
+                        title: o.length ? o : "",
+                        value: n,
+                        minLength: 0,
+                        debounceTimeout: 350,
+                        placeholder: i,
+                        onChange: this.onChange,
+                        disabled: h
+                    }) : (D.a.createElement("textarea",{
+                        className: o.length ? "invalid" : "",
+                        title: o.length ? o : "",
+                        value: n,
+                        minLength: 0,
+                        debounceTimeout: 350,
+                        placeholder: i,
+                        onChange: this.onChange,
+                        disabled: h
+                    }))) // here!
+
+                    </script>
+                </div>
+				<div class='btn'>
+					<br><input class="in_box" type='submit' value='送出'>
+					<br>
+					<input class="in_box" type='reset' value='重填'>
+				</div>
+            </form>
+        </div>
+    </div>
+    <p>Result: {{ result }}</p>
+</body> 
+
+
+
+<div class="wrap">
+    <div class="content">
+        <form  method="post">
+            <h1 class="form-h1">請輸入股票資料</h1>
+            <div class="form-item">
+                <label for="stock_code">股票代碼：</label>
+                <input type="number" id="stock_code" name="s_code" value="{{ s_code }}" min=0 required > 
+            </div>
+            
+            <!-- <div class="form-item">
+                <label for="stock_name">股票名稱：</label>
+                <input type="text" id="stock_name" name="s_name" value="{{ s_name }}" required>
+            </div> -->
+
+            <DIV class="form-item">
+                <label for="number of sheets">購買時間：</label>
+                <input type="date" id='buy_dateInput'  name = 's_time' placeholder='2014-09-18' size = '50' class='in_about'  value="{{ s_time }}" required>
+            </DIV>
+            <script>
+                // 獲取今天的日期並格式化為 YYYY-MM-DD
+                var today = new Date().toISOString().split('T')[0];
+                // 設置 input 的最大日期
+                document.getElementById('buy_dateInput').setAttribute('max', today);
+            </script>
+
+            <!-- <div class="form-item">
+                <label for="number of sheets">張數：</label>
+                <input type="text" id="number of sheets" name='{{ s_num }}'>
+            </div> -->
+            
+            <div class="form-item">
+                <label for="fractional share">股數：</label>
+                <input type="number" id="fractional share" name="s_fs" step="1" value="{{ s_fs }}" min=0 required>
+            </div>
+            <div class="form-item">
+                <label for="fractional share">價格：</label>
+                <input type="number" step="0.01" id="fractional share" name="s_price" value="{{ s_price }}" min=0 required>
+            </div>
+
+        
+            <div class='btn'>
+                <br><input class="in_box" type='submit' value='送出'>
+                <br>
+                <input class="in_box" type='reset' value='重填'>
+            </div>
+        </form>
+    </div>
+</div>
+<p>Result: {{ result }}</p>
+
+</html>
