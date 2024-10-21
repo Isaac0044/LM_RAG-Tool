@@ -5,12 +5,15 @@ cd C:\Research_Topics\DB_web
 conda activate DB_web_env
 
 DB_web_env\Scripts\activate
+Ollama-Chat\Scripts\activate
 uvicorn main:app --reload
 
 127.0.0.1:8000/form
 127.0.0.1:8000/Insurance
 
 streamlit run rag_l1.py
+cd combin 
+streamlit run combin.py
 --------------------------------------------
 #first create ENVIRONMENT#
 
