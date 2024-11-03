@@ -14,11 +14,16 @@ uvicorn main:app --reload
 streamlit run rag_l1.py
 cd combin 
 streamlit run combin.py
+
+--
+
+cd Ollama-Chat
+streamlit run simple.py
 --------------------------------------------
 #first create ENVIRONMENT#
 
 
-cd C:\Research_Topics\DB_web
+cd D:\Research_Topics\LM_RAG-Tool
 
 conda create -n DB_web_env python=3.11
 
