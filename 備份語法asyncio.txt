@@ -1,0 +1,60 @@
+
+"""
+# async def chat(message, model=models): ### CHANGE MODEL ID HERE 
+#     client = ollama.AsyncClient()
+#     messages = [{'role': 'user', 'content': message}]
+#     try:    
+#         response = await client.chat(
+#             model=model,
+#             messages=messages,
+#             tools=[
+#                 {
+#                   'type': 'function',
+#                   'function': {
+#                       'name': 'get_stock_price',
+#                       'description': 'Query real-time stock prices for a given stock code',
+#                       'parameters': {
+#                           'type': 'object',
+#                           'properties': {
+#                               'stock': {'type': 'integer', 'description': 'The stock code you want to query, such as 2330 for TSMC'},
+#                           },
+#                           'required': ['stock_code'],
+#                       },
+#                   },
+#               },
+#             ],
+#             )
+#         messages.append(response['message'])
+
+    #     if not response['message'].get('tool_calls'):
+    #         print("The model didn't use the function. Its response was:")
+    #         print("-------------------ERR---------------")
+    #         print(response['message']['content'])
+    #         return cc.convert(response['message']['content'])
+            
+
+    #     if response['message'].get('tool_calls'):
+    #         available_functions = {
+    #             'get_stock_price': get_stock_price,
+    #         }
+
+    #         print("function_response",response['message']['tool_calls'])
+
+    #         for tool in response['message']['tool_calls']:
+    #             function_to_call = available_functions[tool['function']['name']]
+    #             print("tool",tool['function']['arguments']['stock_code'])
+    #             function_response = function_to_call(tool['function']['arguments']['stock_code'])
+    #             messages.append({'role': 'tool', 'content': function_response})
+    #             print("function_response",function_response['message']['content'])
+
+    #         # Second API call with the tool response
+    #         final_response = await client.chat(model=models, messages=messages)
+    #         print("final_response",final_response['message']['content'])
+    #         return cc.convert(final_response['message']['content'])
+    # except Exception as e:
+    #     error_message = str(e).lower()
+    #     if "not found" in error_message:
+    #         return f"Model '{model}' not found. Please refer to Documentation at https://ollama.com/library."
+    #     else:
+    #         return f"An unexpected error occurred with model '{model}': {str(e)}"
+"""
