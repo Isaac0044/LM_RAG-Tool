@@ -62,15 +62,16 @@ def get_stock_price(stock: str) -> int:
             continue
 
     # 取得股票名稱和編號
-    stock_info = driver.find_element(By.XPATH, '/html/body/table[2]/tbody/tr[2]/td[3]/main/table/tbody/tr/td[1]/section/table/tbody/tr[1]/td/nobr[1]/h2/a').text.split(' ')
+    stock_info = driver.find_element(By.XPATH, '/html/body/table[2]/tbody/tr[2]/td[3]/main/table/tbody/tr/td[1]/section/table/tbody/tr[1]/th/nobr[1]/h2/a').text.split(' ')
     stock_number = stock_info[0]
     stock_name = stock_info[1]
+
 
     # 取得本益比 PER
     PER = driver.find_element(By.XPATH, '//td[@title="PER=成交價/近四季合計EPS"]').text
 
     # 取得數據更新時間
-    update_time = driver.find_element(By.XPATH, '/html/body/table[2]/tbody/tr[2]/td[3]/main/table/tbody/tr/td[1]/section/table/tbody/tr[1]/td/nobr[5]').text.split(' ')
+    update_time = driver.find_element(By.XPATH, '/html/body/table[2]/tbody/tr[2]/td[3]/main/table/tbody/tr/td[1]/section/table/tbody/tr[1]/th/nobr[5]').text.split(' ')
 
     # 取得股利發放表格資料
     table = driver.find_element(By.ID, 'tblDetail')
