@@ -5,7 +5,8 @@ import time
 import os
 from datetime import datetime
 import asyncio
-
+import subprocess
+import re
 cc = OpenCC('s2twp')
 
 models = "qwen2.5"
@@ -341,12 +342,50 @@ logging.basicConfig(level=logging.ERROR, filename="error_log.txt")
 # 呼叫 ollama 模型進行回應
 def chat(message, model=models): ### CHANGE MODEL ID HERE 
     try:
+        # graph rag區域-----------------------------
+        # 設定 PYTHONIOENCODING 環境變數為 utf-8
+        os.environ["PYTHONIOENCODING"] = "utf-8"
+
+        # 查詢文字變數
+        query_text = "資訊站放置地點"
+
+        # 執行命令並捕捉輸出
+        result = subprocess.run(
+            [
+                "python", "-m", "graphrag.query",
+                "--root", "./ragtest",
+                "--method", "global",
+                query_text
+            ],
+            capture_output=True,
+            text=True,
+            encoding="utf-8"  # 強制以 UTF-8 解碼
+        )
+
+        # 檢查執行是否成功
+        if result.returncode == 0:
+            # 搜尋 "SUCCESS: Global Search Response:" 後的內容
+            response_match = re.search(r"SUCCESS: Global Search Response:\n(.+)", result.stdout, re.DOTALL)
+            if response_match:
+                # 提取並儲存到變數 response_text 中
+                response_text = f"根據您的資料查詢結果：({response_match.group(1).strip()})"
+                print("成功接收回應：")
+                print(response_text)
+            else:
+                print("未找到成功回應的特定內容。")
+        else:
+            print("執行失敗，錯誤訊息如下：")
+            print(result.stderr)
+            response_text = ""
+
+        # ----------------
+
         messages = [  {
         'role': 'system',
         'content': f"Your name is 穀寶, an AI assistant focused on insurance and stock planning and consulting. If you need more information to make a judgment, you can ask the user to provide more information, and you can use tools to help the user find it. Current stock prices, give suggestions and inquire about current stock status, and also check policy status. The current time is:{time.localtime}",
         },
         {'role': 'user', 
-        'content': message
+        'content': message+response_text
         }]
         response = ollama.chat(model=model, messages=messages,
             tools=[
@@ -368,14 +407,17 @@ def chat(message, model=models): ### CHANGE MODEL ID HERE
         )
         # return response['message']['content']
 
+        
 
-        messages.append(response['message'])
+        
         if not response['message'].get('tool_calls'):
             print("The model didn't use the function. Its response was:")
-            print("-------------------ERR---------------")
+            print("-------------------初始回應---------------")
             print(response['message']['content'])
             response['message']['tool_calls']=""
-            return cc.convert(response['message']['content'])
+
+            return cc.convert(response['message']['content'])  
+
             
 
         if response['message'].get('tool_calls'):
