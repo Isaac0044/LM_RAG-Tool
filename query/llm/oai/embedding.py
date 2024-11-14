@@ -30,7 +30,7 @@ class OpenAIEmbedding(BaseTextEmbedding, OpenAILLMImpl):
         self,
         api_key: str | None = None,
         azure_ad_token_provider: Callable | None = None,
-        model: str = "nomic-embed-text",
+        model: str = "text-embedding-3-small",
         deployment_name: str | None = None,
         api_base: str | None = None,
         api_version: str | None = None,
