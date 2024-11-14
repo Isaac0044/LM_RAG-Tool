@@ -104,7 +104,7 @@ def _load_openai_completion_llm(
     return _create_openai_completion_llm(
         OpenAIConfiguration({
             **_get_base_config(config),
-            "model": config.get("model", "gpt-4-turbo-preview"),
+            "model": config.get("model", "qwen2.5"),
             "deployment_name": config.get("deployment_name"),
             "temperature": config.get("temperature", 0.0),
             "frequency_penalty": config.get("frequency_penalty", 0),
@@ -128,7 +128,7 @@ def _load_openai_chat_llm(
         OpenAIConfiguration({
             # Set default values
             **_get_base_config(config),
-            "model": config.get("model", "gpt-4-turbo-preview"),
+            "model": config.get("model", "qwen2.5"),
             "deployment_name": config.get("deployment_name"),
             "temperature": config.get("temperature", 0.0),
             "frequency_penalty": config.get("frequency_penalty", 0),
@@ -153,7 +153,7 @@ def _load_openai_embeddings_llm(
         OpenAIConfiguration({
             **_get_base_config(config),
             "model": config.get(
-                "embeddings_model", config.get("model", "text-embedding-3-small")
+                "embeddings_model", config.get("model", "nomic-embed-text")
             ),
             "deployment_name": config.get("deployment_name"),
         }),
@@ -246,7 +246,7 @@ def _create_openai_chat_llm(
     cache: LLMCache,
     azure=False,
 ) -> CompletionLLM:
-    """Create an openAI chat llm."""
+    """Create an gubao chat llm."""
     client = create_openai_client(configuration=configuration, azure=azure)
     limiter = _create_limiter(configuration)
     semaphore = _create_semaphore(configuration)
@@ -261,7 +261,7 @@ def _create_openai_completion_llm(
     cache: LLMCache,
     azure=False,
 ) -> CompletionLLM:
-    """Create an openAI completion llm."""
+    """Create an gubao completion llm."""
     client = create_openai_client(configuration=configuration, azure=azure)
     limiter = _create_limiter(configuration)
     semaphore = _create_semaphore(configuration)
