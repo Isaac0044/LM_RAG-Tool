@@ -48,3 +48,23 @@ pip install fastapi "uvicorn[standard]" jinja2
 開啟您的終端機，並在 HelloWorld 專案資料夾內，使用下列命令建立名為 venv 的虛擬環境：python3 -m venv .venv。
 
 若要啟用虛擬環境，請輸入：source .venv/bin/activate。 如果運作正常，您應該會在命令提示字元前面看到 (.venv)。 您現在有一個就緒的獨立式環境，可供您撰寫程式碼及安裝套件。 當您完成虛擬環境時，請輸入下列命令將它停用：deactivate。
+
+--移轉conda環境
+conda info --envs
+
+env
+C:\Users\Isaac\miniconda3\envs\chatglm3-demo_2
+
+.txt
+C:\Users\Isaac\.conda
+
+streamlit run main.py
+
+lib
+
+check--------------------------------------------------------
+python
+
+import torch
+
+print(torch.cuda.is_available())
