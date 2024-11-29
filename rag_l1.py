@@ -17,7 +17,7 @@ def initialize():
 #定義設置資料庫的函數
 def setup_database():
     client = chromadb.Client()  # 創建一個chromadb的客戶端，用於與資料庫交互
-    file_path = 'files/tt_path.xlsx'  # 指定Excel文件的路徑和名稱
+    file_path = 'files/Insurancen.xlsx'  # 指定Excel文件的路徑和名稱
     documents = pd.read_excel(file_path, header=None)  # 使用pandas讀取Excel文件
 
     #使用chromadb客戶端創建或獲取名為'demodocs'的集合
@@ -25,7 +25,7 @@ def setup_database():
 
     #遍歷從Excel文件中讀取的數據，每一行代表一條記錄
     for index, content in documents.iterrows():
-        response = ollama.embeddings(model="mxbai-embed-large", prompt=content[0])  # 通過ollama生成該行文本的嵌入向量
+        response = ollama.embeddings(model="mxbai-embed-large:latest", prompt=content[0])  # 通過ollama生成該行文本的嵌入向量
         collection.add(ids=[str(index)], embeddings=[response["embedding"]], documents=[content[0]])  # 將文本和其嵌入向量添加到集合中
 
     st.session_state.already_executed = True  # 設置'already_executed'為True，表示已完成初始化
@@ -51,7 +51,7 @@ def main():
 
 #定義處理用戶輸入的函數
 def handle_user_input(user_input, collection):
-    response = ollama.embeddings(prompt=user_input, model="mxbai-embed-large")  # 生成用戶輸入的嵌入向量
+    response = ollama.embeddings(prompt=user_input, model="mxbai-embed-large:latest")  # 生成用戶輸入的嵌入向量
     results = collection.query(query_embeddings=[response["embedding"]], n_results=3)  # 在集合中查詢最相關的三個文檔
     data = results['documents'][0]  # 獲取最相關的文檔
     output = ollama.generate(

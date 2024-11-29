@@ -6,6 +6,20 @@ import requests
 import pandas as pd
 import os
 
+from opencc import OpenCC
+import ollama
+import streamlit as st
+import time
+import os
+from datetime import datetime
+import asyncio
+
+cc = OpenCC('s2twp')
+
+models = "qwen2.5"
+
+
+
 app = FastAPI()
 
 templates = Jinja2Templates(directory='templates/')
