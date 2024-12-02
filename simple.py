@@ -15,8 +15,8 @@ from lightrag.utils import EmbeddingFunc
 cc = OpenCC('s2twp')
 
 models = "qwen2.5" 
-# rag_model = "jcai/breeze-7b-32k-instruct-v1_0:f16"
-rag_model = "ycchen/breeze-7b-instruct-v1_0:latest"
+rag_model = "jcai/breeze-7b-32k-instruct-v1_0:f16"
+# rag_model = "ycchen/breeze-7b-instruct-v1_0:latest"
 # 工具調用功能------------
 
 import requests
@@ -27,6 +27,39 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
+
+
+def query_naive(rag, message, mp):
+    """執行 naive 模式查詢，回傳結果或空字串"""
+    try:
+        result = rag.query(message + mp, param=QueryParam(mode="naive"))
+        return result
+    except Exception:
+        return ""
+
+def query_local(rag, message, mp):
+    """執行 local 模式查詢，回傳結果或空字串"""
+    try:
+        result = rag.query(message + mp, param=QueryParam(mode="local"))
+        return result
+    except Exception:
+        return ""
+
+def query_global(rag, message, mp):
+    """執行 global 模式查詢，回傳結果或空字串"""
+    try:
+        result = rag.query(message + mp, param=QueryParam(mode="global"))
+        return result
+    except Exception:
+        return ""
+
+def query_hybrid(rag, message, mp):
+    """執行 hybrid 模式查詢，回傳結果或空字串"""
+    try:
+        result = rag.query(message + mp, param=QueryParam(mode="hybrid"))
+        return result
+    except Exception:
+        return ""
 
 
 def get_stock_price(stock: str) -> int:
@@ -200,10 +233,12 @@ rag = LightRAG(
     ),
 )
 
-with open("./files/data.txt", "r", encoding="utf-8") as stock_file, \
-     open("./files/insurance_export_1.txt", "r", encoding="utf-8") as insurance_file:
+with open("./files/stock/stock.txt", "r", encoding="utf-8") as stock_file, \
+    open("./files/insurance_export.txt", "r", encoding="utf-8") as insurance_file:
     rag.insert(stock_file.read())
+    print("stock_file ==>",stock_file.read())
     rag.insert(insurance_file.read())
+    print("insurance_file ==>",insurance_file.read())
 
 
 def response_generator(msg_content):
@@ -250,7 +285,10 @@ logging.basicConfig(level=logging.ERROR, filename="error_log.txt")
 # 呼叫 ollama 模型進行回應
 def chat(message, model=models): ### CHANGE MODEL ID HERE 
     
-    # try:
+    try:
+
+
+
         messages = [  {
         'role': 'system',
         'content': f"Your name is 穀寶, an AI assistant focused on insurance and stock planning and consulting. If you need more information to make a judgment, you can ask the user to provide more information, and you can use tools to help the user find it. Current stock prices, give suggestions and inquire about current stock status, and also check policy status. The current time is:{time.localtime}",
@@ -286,29 +324,52 @@ def chat(message, model=models): ### CHANGE MODEL ID HERE
             print(response['message']['content'])
             response['message']['tool_calls']=""
 
-            mp = "{請盡量詳細回答並以清單來條列出來(如遇股票相關提問請回答股票名稱、代號、金額，其他參數依照問題附加；保單針對條文進行詳細回答，並敘述來文是來自哪個區段的)}"
+            mp = "{請針對以下問題詳細回答並以清單來條列出來(如遇股票相關提問請回答股票名稱、代號、金額，其他參數依照問題附加；保單針對條文進行詳細回答，並敘述來文是來自哪個區段的)}"
 
             
+            # print("---------------------------naive---------------------------")
+            # naive = rag.query(message+mp, param=QueryParam(mode="naive"))
+            # print(naive)
+
             print("---------------------------naive---------------------------")
-            naive = rag.query(message+mp, param=QueryParam(mode="naive"))
-            print(naive)
-            
-
-            
-    
+            naive_result = query_naive(rag, message, mp)
+        
+            naive_result = f"回覆1:{naive_result}" if naive_result != '' else ""
+            print(naive_result if naive_result else "Naive 模式回傳空值")
 
             print("---------------------------local---------------------------")
-            local = rag.query(message+mp, param=QueryParam(mode="local"))
-            print(local)
-            print("---------------------------global---------------------------")
-            global_sc =  rag.query(message+mp, param=QueryParam(mode="global"))
-            print(global_sc)
-            print("---------------------------hybrid---------------------------")
-            hybrid = rag.query(message+mp, param=QueryParam(mode="hybrid"))
-            print(hybrid)
+            # local_result = query_local(rag, message, mp)
+            local_result = ''
+            local_result = f"回覆2:{local_result}" if local_result != '' else ""
+            print(local_result if local_result else "Local 模式回傳空值")
 
-            RAG_msg = f"請根據此問題挑選出各個回覆中切合問題的版本進行回覆(僅選擇其中回答最好的版本，直接複製其回復，不須經過任何修改):  問題:{message} \n 回覆1:{naive} \n 回覆2:{global_sc} \n 回覆3: \n 回覆4:{hybrid}"
+
+            print("---------------------------global---------------------------")
+            global_result = query_global(rag, message, mp)
+            global_result = f"回覆3:{global_result}" if global_result != '' else ""
+            print(global_result if global_result else "Global 模式回傳空值")
+
+
+            print("---------------------------hybrid---------------------------")
+            hybrid_result = query_hybrid(rag, message, mp)
+            hybrid_result = f"回覆4:{hybrid_result}" if hybrid_result != '' else ""
+            print(hybrid_result if hybrid_result else "Hybrid 模式回傳空值")
+
+            
+            # print("---------------------------local---------------------------")
+            # local = rag.query(message+mp, param=QueryParam(mode="local"))
+            # print(local)
+            # print("---------------------------global---------------------------")
+            # global_sc =  rag.query(message+mp, param=QueryParam(mode="global"))
+            # print(global_sc)
+            # print("---------------------------hybrid---------------------------")
+            # hybrid = rag.query(message+mp, param=QueryParam(mode="hybrid"))
+            # print(hybrid)
+
+            RAG_msg = f"請根據此問題挑選出各個回覆中切合問題的版本進行回覆，有可能會出現多則回覆，請在其中選擇最完整且契合問題的一個答案即可(僅選擇其中回答最好的版本，直接複製其回復，不須經過任何修改) :  問題:{message} \n {naive_result} \n {local_result} \n {global_result} \n {hybrid_result}"
             # RAG_msg = f"{naive}"
+
+
 
             RAG_response = ollama.chat(model='qwen2.5:14b', messages=[
                     {
@@ -351,19 +412,19 @@ def chat(message, model=models): ### CHANGE MODEL ID HERE
             print("final_response",final_response['message']['content'])
             response['message']['tool_calls']=""
             return cc.convert(final_response['message']['content'])  
-    # except Exception as e:
-    #     response['message']['tool_calls']=""
-    #     error_message = str(e).lower()
-    #     if "not found" in error_message:
-    #         return f"Model '{model}' not found. Please refer to Doumentation at https://ollama.com/library."
-    #     else:
-    #     #     response = ollama.chat(model=model, messages=[
-    #     #     {
-    #     #         'role': 'user',
-    #     #         'content': message,
-    #     #     }
-    #     # ])
-    #         return f"{response['message']['content']}#_#"
+    except Exception as e:
+        response['message']['tool_calls']=""
+        error_message = str(e).lower()
+        if "not found" in error_message:
+            return f"Model '{model}' not found. Please refer to Doumentation at https://ollama.com/library."
+        else:
+        #     response = ollama.chat(model=model, messages=[
+        #     {
+        #         'role': 'user',
+        #         'content': message,
+        #     }
+        # ])
+            return f"{response['message']['content']}#_#"
             # return f"An unexpected error occurred with model '{model}': {str(e)}"
 
         
@@ -457,6 +518,21 @@ def main():
             st.write(user_input)
         st.session_state.messages.append({"role": "user", "content": user_input})
         messages = "\n".join(msg["content"] for msg in st.session_state.messages)
+
+
+        if messages != '':
+                
+                model_sum = "qwen2.5" 
+                re_msg_response = ollama.chat(model=model_sum, messages=[
+            {
+                'role': 'user',
+                'content': "請總結重點問題和回答並回傳:"+messages,
+            }
+        ])
+                print("re_msg_response == > ",re_msg_response['message']['content'])
+                messages = re_msg_response['message']['content']
+
+
         # print(messages)
         response = chat(messages)
         st.session_state.messages.append({"role": "assistant", "content": response})
