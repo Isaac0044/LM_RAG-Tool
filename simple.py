@@ -61,148 +61,24 @@ def query_hybrid(rag, message, mp):
     except Exception:
         return ""
 
-
-def get_stock_price(stock: str) -> int:
-
-    """
-    Get the current stock price of "stock"
-    """
-    stock_list = {}
-    # if not isinstance(stock, int):
-    #     raise TypeError("Stock code must be a integer")
-
-    if not isinstance(stock, int):
-        raise TypeError("Stock code must be a integer")
-    import requests
-    import pandas as pd
-    from bs4 import BeautifulSoup
-    import requests
-    from concurrent.futures import ThreadPoolExecutor
-
-    headers = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36'}
-
-    # data = soup.select_one('M(0) P(0) List(n)')
-    # dfs = pd.read_html(data.prettify())
-
-
-    # df = dfs[0]
-    # df.columns = df.columns.get_level_values(0)
-
-
-    url = f'https://tw.stock.yahoo.com/quote/{stock}/dividend'    # 台積電 Yahoo 股市網址
-    res = requests.get(url, headers = headers)                          # 取得網頁內容
-    res.encoding = 'utf-8'
-    soup = BeautifulSoup(res.text, "html.parser")    # 轉換內容
-    # title = soup.find('h1')             # 找到 h1 的內容
-    price = soup.select('.Fz\(32px\)')[0]     # 找到第一個 class 為 Fz(32px) 的內容，如果出現錯誤，可以使用 .Fz\(32px\) 轉義
-    b = soup.select('.Fz\(20px\)')[0]     # 找到第一個 class 為 Fz(20px) 的內容，如果出現錯誤，可以使用 .Fz\(20px\) 轉義
-    s = ''
-
+from stock_tool import yahoo_get_stock,goodinfo_stock_price,convert_stock
+def get_stock_price(stock: str):
     try:
-        # 如果 main-0-QuoteHeader-Proxy id 的 div 裡有 C($c-trend-down) 的 class
-        # 表示狀態為下跌
-        quote_header = soup.select('#main-0-QuoteHeader-Proxy')
-        if quote_header and quote_header[0].select('[class*="c-trend-down"]'):
-            s = '-'
-    except (IndexError, AttributeError) as e:
-        print(f"First check error: {e}")
-        try:
-            # 如果 main-0-QuoteHeader-Proxy id 的 div 裡有 C($c-trend-up) 的 class
-            # 表示狀態為上漲
-            if quote_header and quote_header[0].select('[class*="c-trend-up"]'):
-                s = '+'
-        except (IndexError, AttributeError) as e:
-            print(f"Second check error: {e}")
-            # 如果都沒有包含，表示平盤
-            s = ''
-
-
-
-    price = price.get_text()
-    stock_name = soup.select('.Fz\(24px\)')[0]
-    stock_name = stock_name.get_text()
+        stock = convert_stock(stock)
+        print(convert_stock(stock))  # 輸出: 大立光
+        print(type(convert_stock(stock)))  # 輸出: "3008"
+    except ValueError as e:
+        print(e)
+        return f"爬取{stock}股票失敗請確認輸入的股票名稱或股票代號是否正確"
     
-# 連漲連跌
-    Continuous_rise_and_fall = soup.select('.Fz\(16px\)')[2]
-
-# 更新日期
-    update_time = soup.select('.Fz\(12px\)')[1]
-    update_time = update_time.get_text()
-
-    # print(f"**************************************\n目前數據(更新日：{year_Dividend_Payout_Ratio}/{update_time[1]})\n ")
-
-    print(f"**************************************\n數據更新日期：({update_time})\n ")
-    stock_list["update_time"] = [f"數據更新日期：{update_time}"]
-    print("股票號碼：",stock)
-    stock_list["stock_number"] = [f"股票號碼：{stock}"]
-    print("股票名稱：",stock_name)
-    stock_list["stock_name"] = [f"股票名稱：{stock_name}"]
-    print("現在股價：",price)
-    stock_list["price"] = [f"現在股價：{price}元台幣"]
-# 上漲下跌
-    print(f"上漲下跌：{s}{b.get_text()}")
-    stock_list["Quote_change"] = [f"上漲下跌：{s}{b.get_text()}"]
-# 連漲連跌
-    print("連漲連跌：",Continuous_rise_and_fall.get_text())
-    stock_list["Continuous_rise_and_fall"] = [f"連漲連跌：{Continuous_rise_and_fall.get_text()}"]
-    # PER=成交價/近四季合計EPS
-    # print("本益比(PER)：",PER)
-    # stock_list["PER"] = [f"本益比(PER)：{PER}"]
-    eps_url = f'https://tw.stock.yahoo.com/quote/{stock}.TW/eps'    # 台積電 Yahoo 股市網址
-    eps_res = requests.get(eps_url, headers = headers)                          # 取得網頁內容
-    eps_res.encoding = 'utf-8'
-    eps_soup = BeautifulSoup(eps_res.text, "html.parser")    # 轉換內容
-# 每股盈餘
-    EPS_4 = 0
-    for i in range(4):
-      EPS = eps_soup.select('li.List\(n\) div.Fxg\(1\)')[4*i].get_text()
-      print(f'前{i+1}季度：',EPS)
-      EPS_4 += float(EPS)
-    print("近四季合計EPS：",EPS_4)
-# 現金股利
-    # cash_dividend = float(soup.select('li.List\(n\) div.Fxg\(1\)')[1].get_text())
+    stock_list = []
     try:
-      cash_dividend = float(soup.select('li.List\(n\) div.Fxg\(1\)')[1].get_text())
+        stock_list = goodinfo_stock_price(stock)
+        print("--採用goodinfo_stock_price方案--")
     except:
-      cash_dividend = soup.select('li.List\(n\) div.Fxg\(1\)')[1].get_text()
-# 股票股利
-    # stock_dividends = soup.select('li.List\(n\) div.Fxg\(1\)')[2].get_text()
-    try:
-      stock_dividends = float(soup.select('li.List\(n\) div.Fxg\(1\)')[2].get_text())
-    except:
-      stock_dividends = soup.select('li.List\(n\) div.Fxg\(1\)')[2].get_text()
+        stock_list = yahoo_get_stock(stock)
+        print("--採用yahoo_get_stock方案--")
 
-
-    # D(f)
-    print("現金股利：",cash_dividend)
-    print("股票股利：",stock_dividends)
-
-    # 公式為：（每股股利/每股盈餘）x100%=盈餘分配率
-    Dividend_Payout_Ratio = cash_dividend / EPS_4
-    print("盈餘分配率：",Dividend_Payout_Ratio)
-    stock_list["Dividend_Payout_Ratio"] = [f"盈餘分配率：{Dividend_Payout_Ratio}"]
-
-    # PER=成交價/近四季合計EPS
-    PER = float(price.replace(',', '')) / EPS_4
-
-    print("本益比(PER)：",PER)
-    # 預估股利公式 = (股價/per)(盈餘分配率)
-  #  Dividend_Payout_Ratio != "-":
-  #  Dividend_Payout_Ratio = Dividend_Payout_Ratio/100
-   # print("Dividend_Payout_Ratio",Dividend_Payout_Ratio)
-    reasonable_price_formula = (float(price.replace(',', '')) / float(PER)) * Dividend_Payout_Ratio
-
-    print(f"今年預估股利：({price} / {PER}) * {Dividend_Payout_Ratio} = {round(reasonable_price_formula,4)}")
-
-    print("\n___方案2：以老師提供的公式推估價位___\n")
-    suggestion_2 =""
-
-    if Dividend_Payout_Ratio != "-":print(f"預估股利公式 = (股價/per)(盈餘分配率)  \n今年預估股利：({price} / {PER}) * {Dividend_Payout_Ratio} = {round(reasonable_price_formula,4)}");suggestion_2 += (f"指標2：預估股利公式 預估股利公式 = (股價/per)(盈餘分配率)  今年預估股利：({price} / {PER}) * {Dividend_Payout_Ratio} = {round(reasonable_price_formula,4)}元台幣")
-    elif last_year_Dividend_Payout_Ratio != "-":print(f"預估股利公式 = (股價/per)(盈餘分配率)  \n今年預估股利：({price} / {PER}) * {round(last_year_Dividend_Payout_Ratio,3)}  = {round(reasonable_price_formula,4)}\n  **因為未到今年配息日故用去年({int(year)-1})配息來計算**\n");suggestion_2 += (f"指標2：預估股利公式 預估股利公式 = (股價/per)(盈餘分配率)  今年預估股利：({price} / {PER}) * {round(last_year_Dividend_Payout_Ratio,3)}  = {round(reasonable_price_formula,4)}元台幣  (因為未到今年配息日故用去年({int(year)-1})配息來計算)")
-    stock_list["suggestion_2"] = suggestion_2
-
-
-    print(f"full list -> {stock_list}")
 
     return str(stock_list)
 
@@ -566,3 +442,4 @@ def main():
 if __name__ == "__main__":
     main()
 
+76
