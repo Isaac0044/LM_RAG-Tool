@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;台塑&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Formosa Plastics Group is a Taiwanese multinational conglomerate engaged in petrochemicals, cement, and other industries."&lt;SEP&gt;"The founders of Formosa Plastics Group included Yung-ching Huang and M.Y. Chang, two influential figures in the development of the group."&lt;SEP&gt;"台塑 is a Taiwanese multinational conglomerate corporation involved in petrochemicals and materials."&lt;SEP&gt;"台塑 is a Taiwanese multinational conglomerate engaged in petrochemicals, cement, and other industries."&lt;SEP&gt;"台塑 is a Taiwanese multinational conglomerate involved in petrochemicals, chemicals, and plastic industries."&lt;SEP&gt;"台塑 is a Taiwanese multinational conglomerate involved in petrochemicals, chemicals, and plastic industries."&lt;SEP&gt;"台塑 is a Taiwanese multinational conglomerate involved in petrochemicals, chemicals, and plastic industries."&lt;SEP&gt;"台塑 is a Taiwanese multinational conglomerate involved in petrochemicals, chemicals, and plastic industries."&lt;SEP&gt;"台塑 is a Taiwanese multinational conglomerate involved in petrochemicals, chemicals, and plastic industries."</data>
+      <data key="d2">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b&lt;SEP&gt;chunk-bb36d7c17797c37fa4afc8800f43945a&lt;SEP&gt;chunk-bb4e434632126785dae11057566dc897</data>
+    </node>
+    <node id="&quot;台泥&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Taiwan Cement Corporation is a Taiwanese company specializing in cement, energy, and recycling industries."&lt;SEP&gt;"The founders of Taiwan Cement Corporation include Yeh Lung-chi and others who played a crucial role in shaping the company's growth and expansion."&lt;SEP&gt;"台泥 is a Taiwanese company specializing in cement, chemical products, and waste management."&lt;SEP&gt;"台泥 is a Taiwanese company specializing in cement, energy, and recycling industries."</data>
+      <data key="d2">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b&lt;SEP&gt;chunk-bb4e434632126785dae11057566dc897</data>
+    </node>
+    <node id="&quot;台塑集團&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Formosa Plastics Group, a major Taiwanese multinational conglomerate corporation in the chemical and petrochemical industries."</data>
+      <data key="d2">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b</data>
+    </node>
+    <node id="&quot;台積電&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"TSMC is a semiconductor foundry company headquartered in Taiwan, providing IC manufacturing services."&lt;SEP&gt;"TSMC is a semiconductor foundry company headquartered in Taiwan, specializing in the fabrication of integrated circuits."</data>
+      <data key="d2">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b&lt;SEP&gt;chunk-bb4e434632126785dae11057566dc897</data>
+    </node>
+    <node id="&quot;大立光&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"DIGIMAX Corporation is a lens manufacturer for smartphone cameras, known for producing dual-camera setups and optical zoom technology."&lt;SEP&gt;"大立光明華電子股份有限公司是一家台灣的影像感測器及鏡頭製造商。"</data>
+      <data key="d2">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b&lt;SEP&gt;chunk-bb4e434632126785dae11057566dc897</data>
+    </node>
+    <node id="&quot;聯發科&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"MediaTek is a fabless semiconductor company that develops chips for wireless communications, digital multimedia, and other fields."&lt;SEP&gt;"Mediatek is a fabless semiconductor company that primarily designs chips for mobile phones and other electronics."</data>
+      <data key="d2">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b&lt;SEP&gt;chunk-bb4e434632126785dae11057566dc897</data>
+    </node>
+    <node id="&quot;日月光&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"DSG is a Taiwanese semiconductor manufacturer and foundry services provider."</data>
+      <data key="d2">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b</data>
+    </node>
+    <node id="&quot;華新科&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Hua Nan Semiconductor Corporation is a Taiwanese IC design and manufacturing company."</data>
+      <data key="d2">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b</data>
+    </node>
+    <node id="&quot;悠年終身保險&quot;">
+      <data key="d0">"INSURANCE POLICY"</data>
+      <data key="d1">"悠年終身保險是一單筆繳費，終身具有保障的年金型保險商品."&lt;SEP&gt;"悠年終身保險是一單筆繳費，終身具有保障的年金型保險商品."&lt;SEP&gt;"悠年終身保險是一單筆繳費，終身具有保障的年金型保險商品."&lt;SEP&gt;悠終身壽險為單筆繳費、終身具有保障的年金型保險商品。它由台灣人非常熟悉且信任的一家提供年金險的保險公司所推出，旨在幫助顧客完善其退休生活的金融保障。該商品以一筆費用作繳費，終身擁有保單保障，定期性領取生存金，使其在老年時期能有充足的生活費，度過美好的退休生活。</data>
+      <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590&lt;SEP&gt;chunk-78b2fe770b2eacc9d0d5cc17d919201d</data>
+    </node>
+    <node id="&quot;悠年期終終身保險&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"悠年期終終身保險是一份年金險型保險商品，為保戶在退休後提供生活保障。"</data>
+      <data key="d2">chunk-f6dc9327d154d115b303e1dd8f7d5d64</data>
+    </node>
+    <node id="&quot;悠年終身壽險&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"悠年終身壽險是一種年金險，提供終身的保障和年金給付。"</data>
+      <data key="d2">chunk-70ca7bdb573bfe8bc73a8e37d5ff9e11</data>
+    </node>
+    <node id="&quot;自由配一年定期加護燒燙傷病房醫療健康保險附約&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"自由配一年定期加護燒燙傷病房醫療健康保險附約是一種年金險，提供短期的加護與燒燙傷病房醫療保障。"</data>
+      <data key="d2">chunk-70ca7bdb573bfe8bc73a8e37d5ff9e11</data>
+    </node>
+    <node id="&quot;我好帥&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"我好帥是一種年金險，可能提供終身或特定年期的保障和福利。"</data>
+      <data key="d2">chunk-70ca7bdb573bfe8bc73a8e37d5ff9e11</data>
+    </node>
+    <node id="&quot;ORGANIZATION&quot;">
+      <data key="d2">chunk-70ca7bdb573bfe8bc73a8e37d5ff9e11</data>
+      <data key="d1">"悠年終身壽險提供年金險型的保險商品和服務."</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <node id="&quot;國泰人壽&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"&lt;SEP&gt;"國泰人壽是一家提供悠年終身保險的保險公司."&lt;SEP&gt;國泰人壽是一家提供悠年期終身保險的保險公司。它為客戶提供了一系列的保險產品，旨在保障其生活品質並承受風險。由於描述內容大致相同，因此可以得出一個統一的描述：「國泰人壽是一家主要提供悠年終身保險的保險公司，旨在保護客戶的生活品質並幫助他們承受各種風險。」</data>
+      <data key="d2">chunk-89d2d6bf6ba53fbda48dd1deaa512d5d&lt;SEP&gt;chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+    </node>
+    <node id="&quot;悠年期終身保險&quot;">
+      <data key="d0">"INSURANCE"</data>
+      <data key="d1">"悠年期終身保險是一種年金險，於10年保額期間屆滿後開始給付年金。"</data>
+      <data key="d2">chunk-89d2d6bf6ba53fbda48dd1deaa512d5d</data>
+    </node>
+    <node id="&quot;要保人&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"要保人是購買悠年終身保險並負擔保費義務的人."&lt;SEP&gt;要保人是在悠年期終終身險保單上的客戶，負責支付保險費並享有保單之權利。在所提供的描述中，要保人被 repetitively defined as the person who purchases悠年終身保險和負擔保費義務的人。因此，要保人是購買悠年終身保險，並負擔其保費的客戶，並且具有保單上的權利。</data>
+      <data key="d2">chunk-89d2d6bf6ba53fbda48dd1deaa512d5d&lt;SEP&gt;chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+    </node>
+    <node id="&quot;被保險人&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"被保險人是悠年終身保險提供保障和受益人的個人."&lt;SEP&gt;被保險人是指在悠年期終終身壽險保單下獲得保障的人員，他們在保險事件發生時將獲得理賠。被保險人在悠年終身保險的架構中具有重要地位，因其不僅是受益人的個人，更是悠年集團提供保障和服務的核心對象。在所有描述中，強調了被保險人與悠年終身保險、保障和受益人間的緊密關聯性，並反覆確認其角色定位為接受保障且於理賠時獲得補償的人員。</data>
+      <data key="d2">chunk-89d2d6bf6ba53fbda48dd1deaa512d5d&lt;SEP&gt;chunk-a1b9f0989875118cc37cf337f6cf2590&lt;SEP&gt;chunk-7dd26a1023ff981c21630339a3360fed</data>
+    </node>
+    <node id="&quot;年金給付期&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"年金給付期為悠年期終身保險於保額期間屆滿後，開始給付年金之特定時期."</data>
+      <data key="d2">chunk-89d2d6bf6ba53fbda48dd1deaa512d5d</data>
+    </node>
+    <node id="&quot;LIFE INSURANCE COMPANY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Life Insurance Company is the organization providing insurance services and products."</data>
+      <data key="d2">chunk-29e816dcc53aa84c8060e54fe45968ee</data>
+    </node>
+    <node id="&quot;POLICYHOLDER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A policyholder is a customer who has purchased an insurance plan from the Company, receiving protection and benefits according to their policy."&lt;SEP&gt;"A policyholder is an individual or entity that purchases and maintains an insurance policy."&lt;SEP&gt;"Policyholder refers to the person who purchases and maintains the insurance policy on behalf of the insured individual."&lt;SEP&gt;"The policyholder is the individual or entity that purchases and maintains the insurance policy, responsible for paying premiums and receiving the insurance benefits."</data>
+      <data key="d2">chunk-0e65d3d49d0ae1d51845031caf295331&lt;SEP&gt;chunk-158a90bdd89d67d08f3b6ee8e6aae7ec&lt;SEP&gt;chunk-e9f0432b2ea7746ba1e3d844ef7821b8&lt;SEP&gt;chunk-29e816dcc53aa84c8060e54fe45968ee</data>
+    </node>
+    <node id="&quot;INSURED PERSON&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"An insured person is the individual covered under an insurance policy, who receives benefits from the policy in case of illness, injury, or other covered events."&lt;SEP&gt;"Insured Person is the individual covered under the insurance policy, receiving benefits in case of specific events such as survival or death."&lt;SEP&gt;"The Insured Person is the individual or entity covered by the insurance policy, who receives benefits in case of certain events or circumstances specified in the policy."&lt;SEP&gt;"The Insured Person is the individual who is covered under an insurance policy, receiving benefits in case of specific events like death or total disability."&lt;SEP&gt;"The Insured Person is the individual whose life, health, or property is covered under the insurance policy."&lt;SEP&gt;"The insured person is the individual covered under the insurance policy, who can receive coverage in case of an eligible event or accident."</data>
+      <data key="d2">chunk-29e816dcc53aa84c8060e54fe45968ee&lt;SEP&gt;chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-87893c5e345a332940fce33a8d129169&lt;SEP&gt;chunk-2623f098c2bce4a495b90e6d99fe2799&lt;SEP&gt;chunk-0e65d3d49d0ae1d51845031caf295331&lt;SEP&gt;chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </node>
+    <node id="&quot;BENEFICIARY&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A Beneficiary is an individual or entity designated to receive the insurance benefits or payout upon the occurrence of a specified event, such as the death of the insured person."&lt;SEP&gt;"Beneficiary is an individual covered under the health insurance policy."&lt;SEP&gt;"Beneficiary is the individual designated to receive insurance benefits upon the occurrence of certain events such as the death or survival of the insured person."&lt;SEP&gt;"The Beneficiary is the individual designated to receive insurance payouts upon the insured event, such as death or total disability."</data>
+      <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-87893c5e345a332940fce33a8d129169&lt;SEP&gt;chunk-34947c52853047d62fc33a0c84fe6f92&lt;SEP&gt;chunk-29e816dcc53aa84c8060e54fe45968ee</data>
+    </node>
+    <node id="&quot;INSURANCE POLICY&quot;">
+      <data key="d0">"TECHNOLOGY"</data>
+      <data key="d1">"An Insurance Policy is a legal document that outlines the terms and conditions of an insurance contract, providing coverage for the insured individual or entity."&lt;SEP&gt;"An Insurance Policy is a written or electronic agreement between an insurance company and the policyholder, which specifically outlines the terms and conditions of the insurance coverage provided."&lt;SEP&gt;"Insurance Policy is a contract between AIA and the Customer, outlining the terms and conditions of the insurance coverage."&lt;SEP&gt;"Insurance Policy refers to the insurance policy document that outlines the terms and conditions of coverage for the insured person."&lt;SEP&gt;"The Insurance Policy is a legal document that outlines the terms and conditions of the insurance coverage provided by the Insurance Company to the Insured Person."</data>
+      <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0&lt;SEP&gt;chunk-29e816dcc53aa84c8060e54fe45968ee&lt;SEP&gt;chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-87893c5e345a332940fce33a8d129169&lt;SEP&gt;chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </node>
+    <node id="&quot;INSURANCE CONTRACT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"An Insurance Contract is a formal agreement between the Life Insurance Company and the Policyholder, outlining the policy's terms and conditions, and specifying the parties' rights and obligations."</data>
+      <data key="d2">chunk-29e816dcc53aa84c8060e54fe45968ee</data>
+    </node>
+    <node id="&quot;PREMIUM PAYMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Premium Payment refers to the regular payment made by the Policyholder to maintain the active status of the insurance policy."</data>
+      <data key="d2">chunk-29e816dcc53aa84c8060e54fe45968ee</data>
+    </node>
+    <node id="&quot;COMPANY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Company is an insurance provider offering coverage and support to its policyholders."&lt;SEP&gt;"The Company is an insurance provider offering various insurance policies and services."&lt;SEP&gt;"The Company is an insurance provider that sets the rules and conditions for insurance policies."</data>
+      <data key="d2">chunk-51d4ba718fa34d30a6ee7616f6173b15&lt;SEP&gt;chunk-158a90bdd89d67d08f3b6ee8e6aae7ec&lt;SEP&gt;chunk-a961a5ef0e96ee005992546b45687e56</data>
+    </node>
+    <node id="&quot;INSURANCE PLAN&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"An Insurance Plan refers to the contract between the Company and the Policyholder, outlining the terms of coverage, benefits, and responsibilities under the policy."</data>
+      <data key="d2">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </node>
+    <node id="&quot;PREMIUM&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"A Premium is the amount paid by the Policyholder to the Company as part of their Insurance Plan, providing coverage and protection according to the policy terms."&lt;SEP&gt;"The Premium is the amount of money paid by the Policy Holder to the Insurance Company as part of the insurance policy, in exchange for the coverage provided."</data>
+      <data key="d2">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec&lt;SEP&gt;chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </node>
+    <node id="&quot;CLAIM&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A Claim is a formal request made by the Insured Person or their representative to the Insurance Company for payment of benefits under the terms of the Insurance Policy."&lt;SEP&gt;"A Claim refers to a request made by the Policyholder for payment or coverage from the Company, typically resulting from an incident or event covered under the Insurance Plan."</data>
+      <data key="d2">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec&lt;SEP&gt;chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </node>
+    <node id="&quot;INCIDENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"An Incident refers to an event or occurrence that may result in a Claim being filed by a Policyholder, seeking payment or coverage from the Company under their Insurance Plan."</data>
+      <data key="d2">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </node>
+    <node id="&quot;COMPANY NAME&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Company Name is an insurance company responsible for managing and providing insurance policies to its clients."</data>
+      <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </node>
+    <node id="&quot;POLICY HOLDER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Policy Holder is the individual who holds the insurance policy and is responsible for making payments and updates as needed."&lt;SEP&gt;"The Policy Holder is the individual or entity that holds the insurance policy and is responsible for paying premiums and making other necessary decisions regarding the policy."</data>
+      <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </node>
+    <node id="&quot;POLICY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Policy refers to the insurance policy document that outlines the terms and conditions of coverage for the insured person."</data>
+      <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </node>
+    <node id="&quot;INSURANCE COMPANY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"An insurance company offers various types of insurance policies, including health, life, and property insurance to individuals and businesses."&lt;SEP&gt;"Insurance Company is the organization responsible for providing insurance coverage and managing the policies they offer."&lt;SEP&gt;"The Insurance Company is the organization responsible for processing insurance claims and providing coverage for its policyholders."&lt;SEP&gt;"The insurance company is the organization providing the coverage and services described in this document."&lt;SEP&gt;"The insurance company is the organization providing the insurance policy and services for their customers."</data>
+      <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-87893c5e345a332940fce33a8d129169&lt;SEP&gt;chunk-2623f098c2bce4a495b90e6d99fe2799&lt;SEP&gt;chunk-0e65d3d49d0ae1d51845031caf295331&lt;SEP&gt;chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </node>
+    <node id="&quot;POLICYHOLDERS&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Policyholders are individuals who have insurance policies with the Company, seeking coverage for various events or situations such as death or complete disability."</data>
+      <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+    </node>
+    <node id="&quot;INSURANCE POLICIES&quot;">
+      <data key="d0">"TECHNOLOGY"</data>
+      <data key="d1">"Insurance Policies are contractual agreements between the Company and Policyholders that provide financial protection in exchange for premium payments."</data>
+      <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+    </node>
+    <node id="&quot;FUNERAL EXPENSES&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Funeral Expenses refer to the costs associated with funeral services, which may be covered by insurance policies."</data>
+      <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+    </node>
+    <node id="&quot;公司&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The company is an insurance provider offering various insurance policies and services."</data>
+      <data key="d2">chunk-0c5dd1e2eb54f7a0200d905629f22d89</data>
+    </node>
+    <node id="&quot;終身壽險&quot;">
+      <data key="d0">"POLICY"</data>
+      <data key="d1">"Term life insurance is a type of life insurance policy that provides coverage for a specific period, usually in increments of 10 years."</data>
+      <data key="d2">chunk-0c5dd1e2eb54f7a0200d905629f22d89</data>
+    </node>
+    <node id="&quot;DISABILITY&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Disability refers to a physical or mental impairment that significantly limits a person's ability to perform daily activities, which can impact their eligibility for insurance benefits."</data>
+      <data key="d2">chunk-87893c5e345a332940fce33a8d129169</data>
+    </node>
+    <node id="&quot;INSURABLE INTEREST&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Insurable Interest is the concept that an individual or entity has a financial or emotional stake in the well-being of another person, justifying their ability to purchase insurance coverage for that person."</data>
+      <data key="d2">chunk-87893c5e345a332940fce33a8d129169</data>
+    </node>
+    <node id="&quot;NATIONAL HEALTH INSURANCE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"National Health Insurance is a healthcare system in Taiwan that provides comprehensive medical coverage and financial protection for citizens."</data>
+      <data key="d2">chunk-0e65d3d49d0ae1d51845031caf295331</data>
+    </node>
+    <node id="&quot;THIRD-PARTY ADMINISTRATOR&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Third-Party Administrator is an organization that manages health insurance claims and provides administrative services for insurance companies and their policyholders."</data>
+      <data key="d2">chunk-0e65d3d49d0ae1d51845031caf295331</data>
+    </node>
+    <node id="&quot;INSURANCE PREMIUM&quot;">
+      <data key="d0">"FINANCIAL"</data>
+      <data key="d1">"Insurance premium is the amount paid by a policyholder to an insurance company for coverage under an insurance policy."</data>
+      <data key="d2">chunk-0e65d3d49d0ae1d51845031caf295331</data>
+    </node>
+    <node id="&quot;GOLDEN PACIFIC INSURANCE COMPANY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The insurance company providing the coverage."</data>
+      <data key="d2">chunk-09e958011d2d3f5294960c63db91161f</data>
+    </node>
+    <node id="&quot;INSURTECH COMPANY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"An insurtech company is a business that uses technology to improve and innovate insurance services, products, and operations."</data>
+      <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </node>
+    <node id="&quot;BROKER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A broker is an individual or company that helps clients find the best insurance policies by comparing different providers and policies."</data>
+      <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </node>
+    <node id="&quot;UNDERWRITER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"An underwriter is an insurance professional who assesses the risks associated with an applicant or policy and determines whether to provide coverage and at what cost."</data>
+      <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </node>
+    <node id="&quot;AIA&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"AIA is an insurance company providing various insurance products and services."</data>
+      <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+    </node>
+    <node id="&quot;CUSTOMER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Customer refers to the policyholder or beneficiary of AIA's insurance products and services."</data>
+      <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+    </node>
+    <node id="&quot;POLICY TERM&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Policy Term refers to the duration of an insurance policy, during which the policy remains active and provides coverage")</data>
+      <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+    </node>
+    <node id="&quot;EXCLUSION&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Exclusion refers to the circumstances, situations, or events that are not covered by an insurance policy.")</data>
+      <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+    </node>
+    <node id="&quot;HEALTH INSURANCE COMPANY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Health Insurance Company is an insurance provider offering coverage for medical expenses and services."</data>
+      <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+    </node>
+    <node id="&quot;DOCTOR&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Doctor refers to a medical professional consulted for medical advice and treatment."</data>
+      <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+    </node>
+    <node id="&quot;MEDICAL PROFESSIONAL&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Medical Professionals are experts in various medical fields, providing care and treatment for patients."</data>
+      <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+    </node>
+    <node id="&quot;HOSPITAL&quot;">
+      <data key="d0">"LOCATION"</data>
+      <data key="d1">"Hospital refers to a healthcare institution where medical treatments, surgeries, and other procedures take place."</data>
+      <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+    </node>
+    <node id="&quot;MEDICAL TREATMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Medical Treatment refers to the care and attention provided by medical professionals to address health issues or concerns."</data>
+      <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+    </node>
+    <node id="&quot;MEDICAL EXPENSES&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Medical Expenses refer to the costs associated with healthcare treatments, procedures, and services."</data>
+      <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+    </node>
+    <node id="&quot;本公司&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The insurance company providing the coverage."</data>
+      <data key="d2">chunk-7dd26a1023ff981c21630339a3360fed</data>
+    </node>
+    <node id="&quot;INSURTECH INDUSTRY&quot;">
+      <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+      <data key="d1">"The Insurtech Company operates within the insurtech industry, developing technology to innovate insurance services and products."</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <node id="&quot;AGENT&quot;">
+      <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+      <data key="d1">"A Policyholder may communicate with an Agent to discuss policy details, file claims, or make changes to their policy.")</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <node id="&quot;TSMC&quot;">
+      <data key="d2">chunk-bb4e434632126785dae11057566dc897</data>
+      <data key="d1">"Both companies are based in Taiwan and operate in the semiconductor industry."</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <node id="&quot;生存保險金&quot;">
+      <data key="d0">"PAYOUT"</data>
+      <data key="d1">"生存保險金是在設定年限或特定條件下，被保險人仍然存活時支付的一筆金額."</data>
+      <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+    </node>
+    <node id="&quot;祝壽保險金&quot;">
+      <data key="d0">"PAYOUT"</data>
+      <data key="d1">"祝壽保險金是在被保險人達一定年齡後定期支付的一筆固定金額."</data>
+      <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+    </node>
+    <node id="&quot;身故保險金&quot;">
+      <data key="d0">"PAYOUT"</data>
+      <data key="d1">"身故保險金是在被保險人逝世後，給付給受益人的一筆固定金額."</data>
+      <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+    </node>
+    <node id="&quot;喪葬費用保險金&quot;">
+      <data key="d0">"PAYOUT"</data>
+      <data key="d1">"喪葬費用保險金在被保險人逝世時支付給受益人的一筆資金，用以覆蓋喪葬費用."</data>
+      <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+    </node>
+    <node id="&quot;完全失能保險金&quot;">
+      <data key="d0">"PAYOUT"</data>
+      <data key="d1">"完全失能保險金是在被保險人因疾病或傷害導致完全失能後給付的一筆固定金額."</data>
+      <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+    </node>
+    <edge source="&quot;台塑&quot;" target="&quot;台泥&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Both are Taiwanese multinational conglomerate corporations, with different areas of focus."</data>
+      <data key="d5">"industrial competitors"</data>
+      <data key="d6">chunk-b47ac03cb5f2bc8725bbabb8b1b0108b</data>
+    </edge>
+    <edge source="&quot;台塑&quot;" target="&quot;TSMC&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Both companies are based in Taiwan and operate in the semiconductor industry."</data>
+      <data key="d5">"industry connection, competition or collaboration"</data>
+      <data key="d6">chunk-bb4e434632126785dae11057566dc897</data>
+    </edge>
+    <edge source="&quot;台泥&quot;" target="&quot;大立光&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">")"The two companies are both from Taiwan and might have some business interactions or collaborations despite operating in different industries."</data>
+      <data key="d5">"business interaction, collaboration"</data>
+      <data key="d6">chunk-bb4e434632126785dae11057566dc897</data>
+    </edge>
+    <edge source="&quot;悠年終身壽險&quot;" target="&quot;ORGANIZATION&quot;">
+      <data key="d3">20.0</data>
+      <data key="d4">"悠年終身壽險提供年金險型的保險商品和服務."</data>
+      <data key="d5">"insurance, service"</data>
+      <data key="d6">chunk-70ca7bdb573bfe8bc73a8e37d5ff9e11</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;COMPANY&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"The Company provides insurance plans and protection to Policyholders, who pay premiums in exchange for coverage and benefits.")</data>
+      <data key="d5">10</data>
+      <data key="d6">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;PREMIUM&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Premium refers to the amount paid by the Policyholder to maintain their Insurance Plan, which provides them with coverage and protection.")</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;CLAIM&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"A Policyholder can submit a Claim to the Company for payment or coverage, typically resulting from an incident or event covered under their Insurance Plan.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;INSURANCE POLICY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"An Insurance Policy is issued to a Policyholder, who is then covered under the terms and conditions outlined in the policy.")</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;INCIDENT&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"A Policyholder may experience an Incident covered under their Insurance Plan, which could potentially result in a Claim being filed with the Company.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;NATIONAL HEALTH INSURANCE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The National Health Insurance provides coverage to policyholders, who pay premiums in exchange for medical benefits.")</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-0e65d3d49d0ae1d51845031caf295331</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;INSURANCE COMPANY&quot;">
+      <data key="d3">18.0</data>
+      <data key="d4">"A policyholder has a contractual relationship with an insurance company, purchasing insurance policies to protect against various risks.")&lt;SEP&gt;"The Insurance Company has a contractual relationship with the Policyholder to provide insurance coverage and services.")</data>
+      <data key="d5">9</data>
+      <data key="d6">chunk-0e65d3d49d0ae1d51845031caf295331&lt;SEP&gt;chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;INSURED PERSON&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"An insured person is covered under their policyholder's insurance policy, receiving benefits in case of covered events such as illness or injury.")</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-0e65d3d49d0ae1d51845031caf295331</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;INSURANCE PREMIUM&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"A policyholder pays insurance premiums to maintain their insurance coverage, which provides financial protection in case of covered events.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-0e65d3d49d0ae1d51845031caf295331</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;AGENT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"A Policyholder may communicate with an Agent to discuss policy details, file claims, or make changes to their policy.")</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;BROKER&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Policyholder works with a Broker to find the best insurance policies that fit their needs and budget.")</data>
+      <data key="d5">9</data>
+      <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </edge>
+    <edge source="&quot;POLICYHOLDER&quot;" target="&quot;UNDERWRITER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Policyholder interacts with an Underwriter during the insurance application process to provide necessary information and answer underwriting questions.")</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </edge>
+    <edge source="&quot;INSURED PERSON&quot;" target="&quot;POLICY HOLDER&quot;">
+      <data key="d3">15.0</data>
+      <data key="d4">"Policy Holder is responsible for the insurance policy covering Insured Person, making payments and updates as needed.")&lt;SEP&gt;"The Policy Holder holds an insurance policy that covers the Insured Person, providing financial protection in case of specified events or circumstances.")</data>
+      <data key="d5">7&lt;SEP&gt;8</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </edge>
+    <edge source="&quot;INSURED PERSON&quot;" target="&quot;POLICY&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Policy provides coverage and benefits for the Insured Person in case of specific events such as survival or death.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </edge>
+    <edge source="&quot;INSURED PERSON&quot;" target="&quot;COMPANY NAME&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The Company Name is responsible for providing insurance coverage and benefits to Insured Person under the policy.")</data>
+      <data key="d5">6</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </edge>
+    <edge source="&quot;INSURED PERSON&quot;" target="&quot;INSURANCE COMPANY&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Insurance Company provides coverage for the Insured Person, protecting them and their beneficiaries from financial hardships in case of specific events like death or total disability."</data>
+      <data key="d5">"coverage, protection"</data>
+      <data key="d6">chunk-87893c5e345a332940fce33a8d129169</data>
+    </edge>
+    <edge source="&quot;INSURED PERSON&quot;" target="&quot;INSURANCE POLICY&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The Insurance Policy provides coverage for the Insured Person, offering financial protection in case of specified events or circumstances.")</data>
+      <data key="d5">6</data>
+      <data key="d6">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </edge>
+    <edge source="&quot;BENEFICIARY&quot;" target="&quot;POLICY HOLDER&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Policy Holder may designate a Beneficiary to receive insurance benefits upon the occurrence of specific events.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </edge>
+    <edge source="&quot;BENEFICIARY&quot;" target="&quot;INSURANCE POLICY&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The Insurance Policy outlines the terms and conditions for the distribution of benefits to the designated Beneficiary.")</data>
+      <data key="d5">6</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </edge>
+    <edge source="&quot;BENEFICIARY&quot;" target="&quot;COMPANY NAME&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Company Name is responsible for distributing insurance benefits to the designated Beneficiary upon the occurrence of specific events.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </edge>
+    <edge source="&quot;INSURANCE POLICY&quot;" target="&quot;COMPANY&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Company issues Insurance Policies to Policyholders as contracts that outline the terms of coverage and benefits provided by the Company.")</data>
+      <data key="d5">9</data>
+      <data key="d6">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </edge>
+    <edge source="&quot;INSURANCE POLICY&quot;" target="&quot;COMPANY NAME&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The Insurance Policy connects the Company Name with the policy holder and insured person, providing coverage and benefits as outlined in the policy.")</data>
+      <data key="d5">6</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </edge>
+    <edge source="&quot;INSURANCE POLICY&quot;" target="&quot;POLICY HOLDER&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Insurance Policy is held by the Policy Holder, who is responsible for paying premiums and managing the policy.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </edge>
+    <edge source="&quot;INSURANCE POLICY&quot;" target="&quot;CLAIM&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Insurance Policy is the basis for a Claim made by the Insured Person or their representative to the Insurance Company, requesting payment of benefits.")</data>
+      <data key="d5">9</data>
+      <data key="d6">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </edge>
+    <edge source="&quot;COMPANY&quot;" target="&quot;INSURANCE PLAN&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Company offers Insurance Plans as contracts between themselves and Policyholders, outlining terms of coverage and benefits.")</data>
+      <data key="d5">9</data>
+      <data key="d6">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec</data>
+    </edge>
+    <edge source="&quot;COMPANY&quot;" target="&quot;POLICYHOLDERS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Company provides insurance policies for Policyholders to protect them from financial risks related to various events or situations.")</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-a961a5ef0e96ee005992546b45687e56</data>
+    </edge>
+    <edge source="&quot;PREMIUM&quot;" target="&quot;POLICY HOLDER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The Policy Holder pays the Premium to the Insurance Company as part of maintaining the Insurance Policy and keeping it active.")</data>
+      <data key="d5">8</data>
+      <data key="d6">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </edge>
+    <edge source="&quot;PREMIUM&quot;" target="&quot;CLAIM&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Premium paid by the Policy Holder contributes to the insurance coverage provided by the Insurance Policy, which may be accessed by the Insured Person through a Claim.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </edge>
+    <edge source="&quot;COMPANY NAME&quot;" target="&quot;POLICY HOLDER&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Company Name works with Policy Holder to provide insurance coverage and manage the policy.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </edge>
+    <edge source="&quot;POLICY HOLDER&quot;" target="&quot;POLICY&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Policy Holder holds and manages the insurance policy, making payments and updates as needed.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+    </edge>
+    <edge source="&quot;POLICY HOLDER&quot;" target="&quot;INSURANCE COMPANY&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Insurance Company provides insurance policies to the Policy Holder, who pays premiums and has a contractual relationship with the company.")</data>
+      <data key="d5">9</data>
+      <data key="d6">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+    </edge>
+    <edge source="&quot;INSURANCE COMPANY&quot;" target="&quot;THIRD-PARTY ADMINISTRATOR&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"A Third-Party Administrator works with insurance companies to manage claims and provide administrative services for their policies.")</data>
+      <data key="d5">7</data>
+      <data key="d6">chunk-0e65d3d49d0ae1d51845031caf295331</data>
+    </edge>
+    <edge source="&quot;INSURANCE POLICIES&quot;" target="&quot;FUNERAL EXPENSES&quot;">
+      <data key="d3">1.0</data>
+      <data key="d4">")If the Policyholder passes away, their Insurance Policy may provide coverage for the Policyholder's Funeral Expenses.")("entity"</data>
+      <data key="d5">"February 3"</data>
+      <data key="d6">chunk-a961a5ef0e96ee005992546b45687e56</data>
+    </edge>
+    <edge source="&quot;INSURTECH COMPANY&quot;" target="&quot;INSURTECH INDUSTRY&quot;">
+      <data key="d3">1.0</data>
+      <data key="d4">"The Insurtech Company operates within the insurtech industry, developing technology to innovate insurance services and products."</data>
+      <data key="d5">"technology, insurance")("entity"</data>
+      <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+    </edge>
+  </graph>
+</graphml>
