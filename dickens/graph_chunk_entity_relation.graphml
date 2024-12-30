@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;台塑&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Formosa Plastics Group is a Taiwanese multinational chemical and petrochemical conglomerate."</data>
+  <data key="d2">chunk-bb36d7c17797c37fa4afc8800f43945a</data>
+</node>
+<node id="&quot;國泰人壽&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"國泰人壽 is an insurance company providing various insurance products and services."&lt;SEP&gt;"國泰人壽 is an insurance provider offering a variety of insurance products and services."</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590&lt;SEP&gt;chunk-0e65d3d49d0ae1d51845031caf295331</data>
+</node>
+<node id="&quot;悠年終身保險&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"悠年終身保險 is a life insurance product with various payouts, including survival, birthday, death, and disability benefits."</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+</node>
+<node id="&quot;保險總費用&quot;">
+  <data key="d0">"NUMBER"</data>
+  <data key="d1">"5220000.0"</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+</node>
+<node id="&quot;保險年數&quot;">
+  <data key="d0">"NUMBER"</data>
+  <data key="d1">"10.0"</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+</node>
+<node id="&quot;保險生效時間&quot;">
+  <data key="d0">"DATE"</data>
+  <data key="d1">"2024-11-29"</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+</node>
+<node id="&quot;保險結束時間&quot;">
+  <data key="d0">"DATE"</data>
+  <data key="d1">"2034-11-28"</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+</node>
+<node id="&quot;保單內容&quot;">
+  <data key="d0">"TEXT"</data>
+  <data key="d1">["第1頁，共10頁 國泰人壽悠年限終保險 內容摘要"、"第一條 保險契約的構成"、"第二條 名詞定義"...】</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+</node>
+<node id="&quot;要保人&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The policyholder, who initiates and maintains the insurance policy."&lt;SEP&gt;"The proposer is the individual who applies for the insurance policy on behalf of the insured person, responsible for providing accurate information during the application process."</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590&lt;SEP&gt;chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;保險公司&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The insurance company that provides the insurance coverage for the policy.</data>
+  <data key="d2">chunk-a1b9f0989875118cc37cf337f6cf2590</data>
+</node>
+<node id="&quot;LIFE INSURANCE COMPANY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Life Insurance Company is an organization providing insurance services, offering coverage for accidental death and disability."</data>
+  <data key="d2">chunk-29e816dcc53aa84c8060e54fe45968ee</data>
+</node>
+<node id="&quot;POLICYHOLDER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Policyholder is the individual who has purchased the insurance policy and is responsible for paying premiums."&lt;SEP&gt;"The Policyholder is the person who purchases and maintains the insurance policy, responsible for paying premiums and making decisions on behalf of the insured."</data>
+  <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-29e816dcc53aa84c8060e54fe45968ee</data>
+</node>
+<node id="&quot;INSURED PERSON&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Insured Person is the individual covered under the insurance policy, who may receive benefits in case of an accident or disability."</data>
+  <data key="d2">chunk-29e816dcc53aa84c8060e54fe45968ee</data>
+</node>
+<node id="&quot;BENEFICIARY&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Beneficiary is the individual designated by the Customer to receive insurance proceeds upon approval of a valid claim."&lt;SEP&gt;"The Beneficiary is the person or entity designated to receive the insurance benefits upon the death of the Insured Person."&lt;SEP&gt;"The Beneficiary is the person or entity designated to receive the insurance payout upon the insured event, such as the death of the insured individual."&lt;SEP&gt;"The beneficiary is the individual who receives the benefits or payouts from the insurance policy."</data>
+  <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92&lt;SEP&gt;chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-29e816dcc53aa84c8060e54fe45968ee&lt;SEP&gt;chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</node>
+<node id="&quot;INSURANCE POLICY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Insurance Policy is a contract between AIA and the Customer, providing coverage for specific events such as illness or accidents."&lt;SEP&gt;"Insurance Policy is a financial product provided by Golden Mean Financial that offers coverage for specific events or circumstances."&lt;SEP&gt;"Insurance Policy refers to the contract between the insurance company and the policyholder, outlining the coverage and terms of the insurance."&lt;SEP&gt;"The Insurance Policy is a legal document that outlines the terms and conditions of the insurance coverage, providing protection for the insured person and their beneficiaries."</data>
+  <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8&lt;SEP&gt;chunk-09e958011d2d3f5294960c63db91161f&lt;SEP&gt;chunk-29e816dcc53aa84c8060e54fe45968ee&lt;SEP&gt;chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</node>
+<node id="&quot;COMPANY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Company is an insurance provider offering coverage and services to its customers.")( "entity"&lt;SEP&gt;"The insurance company")("entity"</data>
+  <data key="d2">chunk-158a90bdd89d67d08f3b6ee8e6aae7ec&lt;SEP&gt;chunk-51d4ba718fa34d30a6ee7616f6173b15</data>
+</node>
+<node id="&quot;INSURER&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Insurer is an insurance company providing various coverage options."</data>
+  <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</node>
+<node id="&quot;INSURED&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Insured is the individual whose life or property is covered by the insurance policy."&lt;SEP&gt;"The insured is the person who has purchased an insurance policy and is covered under its terms."</data>
+  <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631&lt;SEP&gt;chunk-34947c52853047d62fc33a0c84fe6f92</data>
+</node>
+<node id="&quot;POLICY&quot;">
+  <data key="d0">"CONTRACT"</data>
+  <data key="d1">"The Policy is the insurance contract that outlines the terms and conditions of coverage, premium payments, and benefit payouts."</data>
+  <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</node>
+<node id="&quot;PREMIUM&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Premium is the person who needs to obtain the Freedom Annual Burn Intensive Care Health Insurance Policy for medical coverage."&lt;SEP&gt;"The Premium is the payment made by the Policyholder to the Insurer in exchange for the insurance coverage provided by the Policy."</data>
+  <data key="d2">chunk-619ec044b0d25c70d587957ef72b08e2&lt;SEP&gt;chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</node>
+<node id="&quot;DEATH BENEFIT&quot;">
+  <data key="d0">"MONETARY VALUE"</data>
+  <data key="d1">"The Death Benefit is the amount of money paid by the Insurer to the Beneficiary upon the death of the Insured."</data>
+  <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</node>
+<node id="&quot;SURVIVAL BENEFIT&quot;">
+  <data key="d0">"MONETARY VALUE"</data>
+  <data key="d1">"The Survival Benefit is the amount of money paid by the Insurer to the Insured or Beneficiary upon the policy's anniversary while the Insured is still alive."</data>
+  <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</node>
+<node id="&quot;INCEPTION DATE&quot;">
+  <data key="d0">"DATE"</data>
+  <data key="d1">"The Inception Date is the date on which the insurance policy became effective and active."</data>
+  <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</node>
+<node id="&quot;TERMINATION DATE&quot;">
+  <data key="d0">"DATE"</data>
+  <data key="d1">"The Termination Date is the date on which the insurance policy is no longer in effect, either due to expiration or early termination by the Policyholder."</data>
+  <data key="d2">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</node>
+<node id="&quot;INSURANCE COMPANY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Insurance Company is the organization that provides insurance policies and regulations for the payout of funeral expense benefits."&lt;SEP&gt;"Insurance Company refers to the organization providing insurance coverage and services to policyholders, managing risks, and handling claims."&lt;SEP&gt;"The Insurance Company is the organization responsible for processing and paying out insurance claims based on the policies they issue."&lt;SEP&gt;"The insurance company is responsible for providing coverage and paying out claims based on the terms of the policy."&lt;SEP&gt;"Insurance Company is the organization that provides the Freedom Annual Burn Intensive Care Health Insurance Policy."</data>
+  <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8&lt;SEP&gt;chunk-a961a5ef0e96ee005992546b45687e56&lt;SEP&gt;chunk-87893c5e345a332940fce33a8d129169&lt;SEP&gt;chunk-619ec044b0d25c70d587957ef72b08e2&lt;SEP&gt;chunk-34947c52853047d62fc33a0c84fe6f92</data>
+</node>
+<node id="&quot;BEING INSURED&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Being Insured refers to individuals who are covered by an insurance policy, with specific conditions regarding payouts and coverage."</data>
+  <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+</node>
+<node id="&quot;FEBRUARY 3RD (EXCLUDING)&quot;">
+  <data key="d0">"DATE"</data>
+  <data key="d1">"February 3rd (excluding) is a significant date in the text, referring to the cut-off date for certain insurance policy regulations."</data>
+  <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+</node>
+<node id="&quot;LEGACY PLANNING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Legacy Planning refers to the process of preparing and organizing one's assets and affairs in advance to ensure their wishes are carried out upon their death or incapacity."</data>
+  <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+</node>
+<node id="&quot;INHERITANCE TAX&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Inheritance tax is a type of tax levied on the transfer of parental wealth to their children or other heirs upon death, which is based on the value of the property or assets being inherited."</data>
+  <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+</node>
+<node id="&quot;FUNERAL EXPENSES&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Funeral Expenses refer to the costs associated with funeral services and the burial or cremation of a deceased individual."</data>
+  <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+</node>
+<node id="&quot;DEPARTMENT OF INSURANCE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Department of Insurance is a regulatory body that oversees the insurance industry, ensuring compliance with laws and regulations."</data>
+  <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+</node>
+<node id="&quot;FINANCIAL ADVISOR&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Financial Advisor refers to a professional who provides guidance on financial matters, including insurance policies and investment strategies."</data>
+  <data key="d2">chunk-a961a5ef0e96ee005992546b45687e56</data>
+</node>
+<node id="&quot;THE COMPANY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Company is the insurance provider offering a contract with '樂齡優退權'".</data>
+  <data key="d2">chunk-0c5dd1e2eb54f7a0200d905629f22d89</data>
+</node>
+<node id="&quot;ALEX&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Alex is a policyholder considering updates to his insurance policy and its terms."</data>
+  <data key="d2">chunk-0c5dd1e2eb54f7a0200d905629f22d89</data>
+</node>
+<node id="&quot;LEONA&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Leona is a representative of the Company, providing information and assistance with policy updates."</data>
+  <data key="d2">chunk-0c5dd1e2eb54f7a0200d905629f22d89</data>
+</node>
+<node id="&quot;XIAOKANG PENSION&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Xiaokang Pension is an organization that offers insurance services and products."</data>
+  <data key="d2">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+</node>
+<node id="&quot;LIFE INSURANCE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Life Insurance is an organization providing life insurance services and products."</data>
+  <data key="d2">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+</node>
+<node id="&quot;CHUNGHWA POST&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Chunghwa Post is an organization offering postal services, including insurance products."</data>
+  <data key="d2">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+</node>
+<node id="&quot;PERSON A&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Person A is a client of Xiaokang Pension and is considering purchasing life insurance."</data>
+  <data key="d2">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+</node>
+<node id="&quot;TAIWAN LIFE INSURANCE CORPORATION&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Taiwan Life Insurance Corporation is a provider of various insurance products and services."</data>
+  <data key="d2">chunk-0e65d3d49d0ae1d51845031caf295331</data>
+</node>
+<node id="&quot;GOLDEN MEAN FINANCIAL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Golden Mean Financial is an insurance company providing the specified insurance policy."</data>
+  <data key="d2">chunk-09e958011d2d3f5294960c63db91161f</data>
+</node>
+<node id="&quot;THOMAS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Thomas is a client of Golden Mean Financial who inquired about the insurance policy."</data>
+  <data key="d2">chunk-09e958011d2d3f5294960c63db91161f</data>
+</node>
+<node id="&quot;COMPANY NAME&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Company Name is an insurance company offering health and accident insurance policies, with terms and conditions detailed in their contracts."</data>
+  <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</node>
+<node id="&quot;POLICY HOLDER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Policy Holder is an individual or entity that purchases and maintains an insurance policy to protect themselves from financial loss in case of certain events, such as illness or injury."</data>
+  <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</node>
+<node id="&quot;DOCTOR&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Doctor is a medical professional who provides diagnosis, treatment, and care for patients, often playing a crucial role in the management of health and accident insurance claims."</data>
+  <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</node>
+<node id="&quot;HOSPITAL&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"Hospital refers to a medical facility where people receive treatment and care when they are ill or have been injured, often working with doctors and other healthcare professionals to manage insurance claims and patient care."</data>
+  <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</node>
+<node id="&quot;MEDICAL STAFF&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Medical Staff refers to the team of healthcare professionals, including doctors, nurses, and specialists, who work together to provide diagnosis, treatment, and care for patients in a hospital or other medical settings."</data>
+  <data key="d2">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</node>
+<node id="&quot;AIA&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"AIA is an insurance company providing various insurance products and services."</data>
+  <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</node>
+<node id="&quot;CUSTOMER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Customer is the individual who purchases an insurance policy from AIA and receives insurance coverage."</data>
+  <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</node>
+<node id="&quot;CLAIM&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Claim refers to the process whereby the Customer notifies AIA of an event that may trigger payment from the Insurance Policy."</data>
+  <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</node>
+<node id="&quot;INTENSIVE CARE UNIT&quot;">
+  <data key="d0">"LOCATION"</data>
+  <data key="d1">"Intensive Care Unit (ICU) is a specialized hospital unit that provides advanced monitoring and treatment for seriously ill or injured patients."</data>
+  <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</node>
+<node id="&quot;INSURANCE BENEFIT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Insurance Benefit is the payout provided by AIA to the Beneficiary upon approval of a valid claim."</data>
+  <data key="d2">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</node>
+<node id="&quot;OTHER DOCTORS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Other Doctors refers to medical professionals who may be consulted for their expertise in treating the insured."</data>
+  <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+</node>
+<node id="&quot;MEDICAL PROFESSIONAL&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Medical professionals provide healthcare services to insured individuals and may be consulted for their expertise in treating the insured."</data>
+  <data key="d2">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+</node>
+<node id="&quot;公司&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The company is an insurance provider offering a one-year renewable medical health insurance policy for intensive care and burn ward coverage."&lt;SEP&gt;"The company is the insurance provider offering the described health insurance policy."</data>
+  <data key="d2">chunk-7dd26a1023ff981c21630339a3360fed&lt;SEP&gt;chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;被保險人&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The insured person is the individual receiving coverage under the insurance policy, who is protected under the terms and conditions outlined in the policy."</data>
+  <data key="d2">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;受益人&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The beneficiary is the individual designated to receive the insurance policy's payout upon the insured person's death or when the policy reaches its maximum value."</data>
+  <data key="d2">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;保險公司客服&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The insurance company's customer service is responsible for addressing policyholders' inquiries, concerns, and providing assistance with policy-related matters."</data>
+  <data key="d2">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;保險給付&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Insurance benefits are the payouts provided by the insurance company to the policyholder or beneficiary as outlined in the policy."</data>
+  <data key="d2">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;住院醫療保險金日額&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The daily amount of coverage for hospitalization expenses is a key component of the insurance policy, providing financial assistance to the insured person during their stay in the hospital."</data>
+  <data key="d2">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;保障範圍&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The coverage scope refers to the types of medical conditions and expenses that are included in the insurance policy, helping policyholders understand what is and isn't covered during their coverage period."</data>
+  <data key="d2">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;保險費率表&quot;">
+  <data key="d0">"DOCUMENT"</data>
+  <data key="d1">"The insurance premium rate table is a reference document used by the insurer to determine the cost of insurance coverage, taking into account factors such as age, gender, and health status."</data>
+  <data key="d2">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</node>
+<node id="&quot;FREEDOM ANNUAL BURN INTENSIVE CARE HEALTH INSURANCE POLICY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Freedom Annual Burn Intensive Care Health Insurance Policy is a medical insurance policy that covers one year of intensive care and burn treatment."</data>
+  <data key="d2">chunk-619ec044b0d25c70d587957ef72b08e2</data>
+</node>
+<node id="&quot;BENEFITS AND LIMITATIONS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Benefits and Limitations are important aspects to consider when choosing a medical insurance policy, such as the Freedom Annual Burn Intensive Care Health Insurance Policy."</data>
+  <data key="d2">chunk-619ec044b0d25c70d587957ef72b08e2</data>
+</node>
+<node id="&quot;INSURANCE POLICY DOCUMENT&quot;">
+  <data key="d2">chunk-619ec044b0d25c70d587957ef72b08e2</data>
+  <data key="d1">"The Freedom Annual Burn Intensive Care Health Insurance Policy is described in the Insurance Policy Document.")</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;要保人&quot;" target="&quot;公司&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The company and the proposer have a relationship based on the proposer applying for insurance coverage on behalf of the insured person.")</data>
+  <data key="d5">9</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;要保人&quot;" target="&quot;被保險人&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The proposer and the insured person have a relationship based on the proposer applying for insurance coverage for the insured person's medical needs and protection.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;要保人&quot;" target="&quot;受益人&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The proposer and the beneficiary have a relationship based on the proposer designating the beneficiary to receive insurance policy payouts upon the insured person's death or when the policy reaches its maximum value.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;要保人&quot;" target="&quot;保險給付&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The proposer plays a crucial role in ensuring that the insurance policy is applied for accurately, as they are responsible for providing accurate information about the insured person's medical conditions and history to avoid any discrepancies or exclusions in the policy.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;POLICYHOLDER&quot;" target="&quot;INSURER&quot;">
+  <data key="d3">18.0</data>
+  <data key="d4">"The Insurer and Policyholder have a contractual relationship, with the Policyholder paying premiums to the Insurer for coverage.")</data>
+  <data key="d5">9</data>
+  <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</edge>
+<edge source="&quot;POLICYHOLDER&quot;" target="&quot;BENEFICIARY&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"The Policyholder designates a Beneficiary to receive insurance payouts upon the occurrence of an insured event, such as the death of the Insured.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</edge>
+<edge source="&quot;BENEFICIARY&quot;" target="&quot;INSURER&quot;">
+  <data key="d3">12.0</data>
+  <data key="d4">"The Insurer has a financial relationship with the Beneficiary, making payouts to the Beneficiary upon the occurrence of an insured event.")</data>
+  <data key="d5">6</data>
+  <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</edge>
+<edge source="&quot;BENEFICIARY&quot;" target="&quot;INSURANCE POLICY&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">")Beneficiary is designated by the Customer to receive the Insurance Benefit upon approval of a valid claim.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</edge>
+<edge source="&quot;BENEFICIARY&quot;" target="&quot;INSURANCE BENEFIT&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">")Beneficiary receives the Insurance Benefit provided by AIA upon approval of a valid claim.")</data>
+  <data key="d5">6</data>
+  <data key="d6">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</edge>
+<edge source="&quot;BENEFICIARY&quot;" target="&quot;INSURED&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The insured individual is the person who will receive the benefits or payouts from the insurance policy upon approval of a claim."</data>
+  <data key="d5">"benefits, payouts"</data>
+  <data key="d6">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+</edge>
+<edge source="&quot;INSURANCE POLICY&quot;" target="&quot;THOMAS&quot;">
+  <data key="d3">12.0</data>
+  <data key="d4">"Thomas is a client of Golden Mean Financial who inquired about the insurance policy."</data>
+  <data key="d5">"insurance, client-company relationship"</data>
+  <data key="d6">chunk-09e958011d2d3f5294960c63db91161f</data>
+</edge>
+<edge source="&quot;INSURANCE POLICY&quot;" target="&quot;COMPANY NAME&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The Insurance Policy is a contract between Company Name and the policyholder, outlining the terms and conditions of the insurance coverage.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</edge>
+<edge source="&quot;INSURANCE POLICY&quot;" target="&quot;POLICY HOLDER&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Policy Holder has purchased and maintains an insurance policy to protect themselves from financial loss in case of certain events.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</edge>
+<edge source="&quot;INSURANCE POLICY&quot;" target="&quot;CUSTOMER&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">")Insurance Policy is purchased by the Customer from AIA, offering protection and coverage for specific events such as illness or accidents.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</edge>
+<edge source="&quot;INSURED&quot;" target="&quot;POLICY&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"The Insured individual is covered by the Policy, which provides insurance coverage for life or property.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</edge>
+<edge source="&quot;INSURED&quot;" target="&quot;MEDICAL PROFESSIONAL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The insured works with medical professionals to receive treatment and care for their health-related issues."</data>
+  <data key="d5">"medical treatment, healthcare services"</data>
+  <data key="d6">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+</edge>
+<edge source="&quot;POLICY&quot;" target="&quot;INCEPTION DATE&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The Inception Date marks the beginning of the insurance policy's effectiveness and coverage.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</edge>
+<edge source="&quot;POLICY&quot;" target="&quot;TERMINATION DATE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Termination Date signifies the end of the insurance policy's effectiveness and coverage.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-b82182d1d7229a30ce8af6a8ff545631</data>
+</edge>
+<edge source="&quot;PREMIUM&quot;" target="&quot;FREEDOM ANNUAL BURN INTENSIVE CARE HEALTH INSURANCE POLICY&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Freedom Annual Burn Intensive Care Health Insurance Policy is designed for Premium to obtain medical coverage.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-619ec044b0d25c70d587957ef72b08e2</data>
+</edge>
+<edge source="&quot;INSURANCE COMPANY&quot;" target="&quot;POLICY HOLDER&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The Insurance Company provides coverage and services to the Policy Holder, managing risks and handling claims based on the terms of their insurance policy.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</edge>
+<edge source="&quot;INSURANCE COMPANY&quot;" target="&quot;OTHER DOCTORS&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"The insurance company may communicate with other doctors to gather medical information and assess eligibility for coverage."</data>
+  <data key="d5">"information gathering, claim assessment"</data>
+  <data key="d6">chunk-34947c52853047d62fc33a0c84fe6f92</data>
+</edge>
+<edge source="&quot;INSURANCE COMPANY&quot;" target="&quot;FREEDOM ANNUAL BURN INTENSIVE CARE HEALTH INSURANCE POLICY&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The Freedom Annual Burn Intensive Care Health Insurance Policy is provided by the Insurance Company.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-619ec044b0d25c70d587957ef72b08e2</data>
+</edge>
+<edge source="&quot;THE COMPANY&quot;" target="&quot;ALEX&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"The Company offers insurance to Alex, who is considering changes to his policy."</data>
+  <data key="d5">"insurance, policy consideration"</data>
+  <data key="d6">chunk-0c5dd1e2eb54f7a0200d905629f22d89</data>
+</edge>
+<edge source="&quot;ALEX&quot;" target="&quot;LEONA&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Leona, as a representative of The Company, provides information and assistance to Alex regarding policy updates."</data>
+  <data key="d5">"information sharing, policy updates"</data>
+  <data key="d6">chunk-0c5dd1e2eb54f7a0200d905629f22d89</data>
+</edge>
+<edge source="&quot;XIAOKANG PENSION&quot;" target="&quot;LIFE INSURANCE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Xiaokang Pension offers life insurance products and services to its clients."</data>
+  <data key="d5">"insurance services, client relationship"</data>
+  <data key="d6">chunk-2623f098c2bce4a495b90e6d99fe2799</data>
+</edge>
+<edge source="&quot;POLICY HOLDER&quot;" target="&quot;DOCTOR&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The Policy Holder seeks medical care from a Doctor, who provides diagnosis and treatment, which may involve interacting with the insurance company to manage claims and coverage.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</edge>
+<edge source="&quot;DOCTOR&quot;" target="&quot;HOSPITAL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Doctors work at hospitals, providing medical care and treatment to patients, often collaborating with other medical staff to ensure the best possible care.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</edge>
+<edge source="&quot;DOCTOR&quot;" target="&quot;MEDICAL STAFF&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Doctors are part of the Medical Staff in a hospital, working together with other healthcare professionals to ensure high-quality patient care and collaboration on insurance claims.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</edge>
+<edge source="&quot;HOSPITAL&quot;" target="&quot;MEDICAL STAFF&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"A Hospital employs Medical Staff, including doctors, nurses, and specialists, to provide comprehensive medical care and treatment to patients in need.")</data>
+  <data key="d5">9</data>
+  <data key="d6">chunk-e9f0432b2ea7746ba1e3d844ef7821b8</data>
+</edge>
+<edge source="&quot;AIA&quot;" target="&quot;CUSTOMER&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"AIA provides insurance products and services to Customers, who purchase policies for coverage and protection.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</edge>
+<edge source="&quot;AIA&quot;" target="&quot;CLAIM&quot;">
+  <data key="d3">12.0</data>
+  <data key="d4">"AIA processes claims from Customers notifying an event that may trigger payment from the Insurance Policy.)</data>
+  <data key="d5">6</data>
+  <data key="d6">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</edge>
+<edge source="&quot;CUSTOMER&quot;" target="&quot;INTENSIVE CARE UNIT&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">")Customer may require care in the Intensive Care Unit if they are seriously ill or injured, potentially affecting their insurance coverage.")</data>
+  <data key="d5">5</data>
+  <data key="d6">chunk-ea95a8a5e3a8989aab555c111f568fe0</data>
+</edge>
+<edge source="&quot;公司&quot;" target="&quot;被保險人&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The company and the insured person have a relationship based on the provision of insurance coverage under the terms and conditions outlined in the policy.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;公司&quot;" target="&quot;受益人&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The company and the beneficiary have a relationship based on the payment of insurance benefits to the beneficiary upon the death of the insured person or when the policy reaches its maximum value.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;公司&quot;" target="&quot;保險給付&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The insurance company is responsible for providing insurance benefits to policyholders or beneficiaries according to the terms and conditions of their respective policies.")</data>
+  <data key="d5">10</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;公司&quot;" target="&quot;住院醫療保險金日額&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The daily amount of coverage for hospitalization expenses, or 'hospital cash,' is a key component provided by the insurance company as part of its medical health insurance policy.")</data>
+  <data key="d5">9</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;公司&quot;" target="&quot;保障範圍&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The scope of protection provided by the insurance company is determined by the terms and conditions outlined in the insurance policy, which defines the types of medical conditions and expenses that are covered under the policy.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;公司&quot;" target="&quot;保險費率表&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The insurance premium rate table is a document used by the insurance company to calculate the cost of insurance coverage based on various factors, such as age, gender, and health status.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;被保險人&quot;" target="&quot;保障範圍&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The insured person's coverage is directly influenced by the terms and conditions outlined within the policy, which define the types of medical conditions and expenses that are included in their insurance plan.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-c2e5303b1841ffeb7d76c5ad53c2bfea</data>
+</edge>
+<edge source="&quot;FREEDOM ANNUAL BURN INTENSIVE CARE HEALTH INSURANCE POLICY&quot;" target="&quot;INSURANCE POLICY DOCUMENT&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Freedom Annual Burn Intensive Care Health Insurance Policy is described in the Insurance Policy Document.")</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-619ec044b0d25c70d587957ef72b08e2</data>
+</edge>
+<edge source="&quot;FREEDOM ANNUAL BURN INTENSIVE CARE HEALTH INSURANCE POLICY&quot;" target="&quot;BENEFITS AND LIMITATIONS&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Understanding the Benefits and Limitations of the Freedom Annual Burn Intensive Care Health Insurance Policy is crucial for making informed decisions.")</data>
+  <data key="d5">7</data>
+  <data key="d6">chunk-619ec044b0d25c70d587957ef72b08e2</data>
+</edge>
+</graph></graphml>
